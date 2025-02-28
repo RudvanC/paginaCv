@@ -16,14 +16,100 @@ body {
   overflow-x: hidden; /* Evita que el contenido se desborde horizontalmente */
 }
 
+
 header {
   display: grid;
   grid-template-columns: 1fr auto; /* Dos columnas: una para el contenido y otra para la imagen */
   gap: 20px; /* Espacio entre las columnas */
   background-color: #383434;
   padding: 20px;
-  margin: 1px;
 }
+
+
+
+/*footer*/
+
+
+
+footer {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  padding: 20px 0;
+  margin-top: auto; /* Para que el footer se quede abajo */
+  width: 100%; /* Asegura que el footer ocupe todo el ancho */
+  margin: 0; /* Elimina márgenes no deseados */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.circle-container{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.circle{
+  width: 80px; /* Tamaño del círculo */
+  height: 80px; /* Tamaño del círculo */
+  background-color: #ffffff00; /* Color de fondo */
+  border: 0.22rem solid black;
+  border-radius: 50%; /* Hace que el elemento sea un círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Color del icono */
+  font-size: 24px; /* Tamaño del icono */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.fa-phone-alt{
+  color: #db0404;
+}
+
+.fa-envelope{
+  color: #218848;
+}
+
+.fa-instagram{
+  color: #3f729b;
+}
+
+.fa-linkedin{
+  color: #0e76a8;
+}
+
+.fa-github{
+  color: #171515;
+}
+
+.footer-item a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-item a:hover {
+  color: #28b628a2; /* Cambia el color al pasar el mouse */
+}
+
+
+.footer-item span {
+  font-size: 16px;
+}
+
+
+
+/*footer*/
+
 
 dl {
   display: grid;
@@ -95,7 +181,6 @@ span{
 #paragraph{
   border: none;
   padding: none;
-  max-width: 200px;
 }
 
     .principal-text{
@@ -131,6 +216,7 @@ main{
 
     .listSpace{
       padding-top: 20px;
+      margin-bottom: 10px;
     }
 
 
@@ -259,6 +345,9 @@ main{
         padding: 0;
         shape-outside: inset(0 0 0 0); /* Permite que el texto fluya alrededor */
       }
+
+      
+
 
       .fotoCv{
         width: 100%;
