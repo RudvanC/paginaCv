@@ -7,36 +7,40 @@
     <title>CV Rudvan Castro</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  
+  <script src="./script.js" defer></script>
   <body>
     <nav class="navbar">
-      <div class="logo">Rudvan Castro</div>
+      <div id="name-nav">Rudvan Castro</div>
         <div class="hamburger" id="hamburger">
-           <span class="bar"></span>
-           <span class="bar"></span>
-           <span class="bar"></span>
-           <span class="bar"></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <ul class="nav-menu" id="nav-menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#paragraph">Inicio</a></li>
+            <li><a href="#education">Educación</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#hobbies">Referencias</a></li>
         </ul>
     </nav>
     <header>
       <div class="contact-info-container">
         <h1 class="name">Rudvan Castro</h1>
 
-        <p id="paragraph" class="contact-info">
+        <p id="paragraph" class="color-contact-info">
           Telefono: <span class="contact-info" class="tel">691-68-52-72</span><br />
           Email:
-          <a class="mail" href="mailto:greatoldone@lovecraft.com"
+          <a class="mail" href="mailto:rudvancastro@gmail.com"
             >rudvancastro@gmail.com</a>
         </p>
           
-            <section id="objective">
+          <section id="objective">
           <p id="paragraph" class="principal-text">
             Soy una persona muy activa, con gran capacidad para trabajar en equipo y colaborar de manera efectiva 
             con otros. Me destaco por mi iniciativa y mi habilidad para investigar y aprender por mi cuenta, lo que me permite 
@@ -45,72 +49,107 @@
           </p>
         </section>
       </div>
-        <div class="image">
-          <div class="pic"><img class="fotoCv" src="fotoCv.jpg"></div>
-        </div>
+          <div class="image">
+            <div class="pic">
+              <img class="fotoCv" src="fotoCv.jpg"></div>
+          </div>
     </header>
+
     <main>
       <dl>
-        <dt class="education">Education</dt>
-        <dd>
-          <h2>Withering Madness University - Planet Vhoorl</h2>
-          <p>
-            <strong>Major:</strong> Public Relations<br />
-            <strong>Minor:</strong> Scale Tending
-          </p>
-        </dd>
+        <section id="section-content">
+        <section id="education">
+          <dt class="education">Educación</dt>
+          <dd>
+            <h2>Colegio Técnico María Elvinia </h2>
+            <p>
+              Bachiller técnico con especialidad en informática<br>
+              Septiembre 2015 - junio 2021 <br>
+              Cali - Colombia<br />
+            </p>
+          <br>
+            <h2 id="no-top-border">Instituto Europa </h2>
+            <p>
+              Sistemas microinformáticos <br>
+              Noviembre 2023 - Julio 2024  <br>
+              Bilbao - España <br />
+            </p>  
+            
+            
+          
+          </dd>
+        </section>
+        <section id="skills">
+          <dt class="skills">Habilidades</dt>
+            <dd>
+              <h2>Office skills</h2>
+                <p>
+                Excelente capacidad de resolución de problemas, 
+                aprendizaje autónomo, trabajo en equipo efectivo, 
+                habilidades de comunicación, colaboración y compañerismo, 
+                capacidad de adaptación, iniciativa para 
+                buscar soluciones, habilidad para investigar y encontrar información.
+                </p>
 
-        <dt class="skills">Skills</dt>
-        <dd>
-          <h2>Office skills</h2>
-          <p>
-            Office and records management, database administration, event
-            organization, customer support, travel coordination
-          </p>
+              <h2 class="computer">Computer skills</h2>
+              <p>
+                Herramientas ofimaticas(En general), Windows, Linux, 
+                sistemas microinformaticos,Instalacion y configuración de
+                aplicaciones informáticas,implantación de los elemntos
+                de la red local,Instalacion y configuración de sistemas 
+                operativos, edición de imagenes(básico)
+              </p>
+          </dd>
+        </section>
 
-          <h2 class="computer">Computer skills</h2>
-          <p>
-            Microsoft productivity software (Word, Excel, etc), Adobe Creative
-            Suite, Windows
-          </p>
-        </dd>
+        <section id="experience">
+          <dt class="experience">Experiencia</dt>
+            <dd class="list-text">
+              <h2>
+                Distribuidora Osorio
+                <span><br>Cali - Colombia, (Febrero 2022 – Junio 2023)</span>
+              </h2>
+              <ul>
+                <li>Carga y descarga de mercancía</li>
+                <li>Logística de entrega a clientes</li>
+                <li>Reabastecimiento de locales comerciales</li>
+                <li>Manejo y transporte de productos en camión</li>
+                <li>Entrega directa de mercancía a clientes</li>
+              </ul>
 
-        <dt class="experience">Experiencia</dt>
-        <dd class="list-text">
-          <h2>
-            Doomsday Cult
-            <span><br>Leader/Overlord - Baton Rogue, LA - 1926-2010</span>
-          </h2>
-          <ul>
-            <li>
-              Inspired and won highest peasant death competition among servants
-            </li>
-            <li>Helped coordinate managers to grow cult following</li>
-            <li>Provided untimely deaths to all who opposed</li>
-          </ul>
+              <h2 class="listSpace">
+                Fundación Alférez Real
+                <span><br>Cali - Colombia, (Abril 2023- Junio 2023)</span>
+              </h2>
+              <ul>
+                <li>Vigilancia y respuesta ante incidentes</li>
+                <li>Resolución de dudas y asistencia a los ciudadanos</li>
+                <li>Disponibilidad constante para el público</li>
+              </ul>
+            </dd>
+        </section>
 
-          <h2 class="listSpace">
-            The Watering Hole
-            <span><br>Bartender/Server - Milwaukee, WI - 2009</span>
-          </h2>
-          <ul>
-            <li>Worked on grass-roots promotional campaigns</li>
-            <li>Reduced theft and property damage percentages</li>
-            <li>Janitorial work, Laundry</li>
-          </ul>
-        </dd>
 
-        <dt class="hobbies">Hobbies</dt>
-        <dd id="modificate-dd">World Domination, Deep Sea Diving, Murder Most Foul</dd>
-
-        <dt class="references">References</dt>
-        <dd id="modificate-dd">Available on request</dd>
+        <section id="hobbies">
+          <dt class="hobbies">Hobbies</dt>
+          <dd id="modificate-dd">Mi hobbie principal es entrenar futbol, 
+            ademas de eso voy al gimnasio, tambien me gusta los videojuegos
+            y ver videos
+          </dd>
+        </section>
+        <section id="references">
+          <dt class="references">Referencias</dt>
+          <dd id="modificate-dd">Available on request</dd>
+        </section>
+        
+      </section>
       </dl>
+
     </main>
     
     <footer class="footer">
       <div class="footer-content">
-        <div clas="circle-container"></div>  
+        <div class="circle-container"></div>  
        
             <!-- Icono de llamada -->
             <div class="circle">
@@ -133,15 +172,6 @@
             </div>
       
 
-            <!-- Icono de Instagram -->
-            <div class="circle">
-              <div class="footer-item">
-                <a href="https://instagram.com" target="_blank">
-                  <i class="fab fa-instagram"></i>
-                
-                </a>
-              </div>
-            </div>
 
             <!-- Icono de LinkedIn -->
             <div class="circle">
